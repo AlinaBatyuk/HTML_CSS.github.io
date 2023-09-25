@@ -55,16 +55,15 @@
 }
 .main-menu i {
 	cursor: pointer;
+	margin-right: 10px;
+}
+.main-menu_1 i {
+	cursor: pointer;
 }
 
-
-.main-menu{
+.main-menu, .main-menu_1{
 	position: relative;
 	top: 3px;
-
-}
-.main-menu i{
-	margin-right: 10px;
 }
 .main-menu_1{
 	display: inline-flex;
@@ -773,6 +772,17 @@ h1{
 	height: 100%;
 	border-radius: 13px;
 }
+.menu-functions {
+    width: 100px;
+    padding: 20px;
+    list-style: none;
+    color: #000;
+    font-family: Satoshi;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
 
 
 
@@ -1193,7 +1203,7 @@ h1{
 	}
 }
 
-.hide {
+.hide{
 	display: none !important;
 }
 @media (min-width: 600px) {
@@ -1396,6 +1406,9 @@ h1{
 	.pay{
 		padding: 15px 59px 7px 14px;
 		justify-content: flex-end;
+	}
+	.search_1> input{
+		display: flex;
 	}
 
 }
