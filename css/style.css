@@ -126,6 +126,7 @@ h1{
     line-height: normal;
     margin-bottom: 60px;
     margin-left: 5%;
+    text-decoration: none;
 }
 .achievement{
     width: 278px;
@@ -265,7 +266,7 @@ h1{
     font-size: 32px;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .new-arrivals_img{
 	display: flex;
@@ -282,16 +283,16 @@ h1{
 	width: 198px;
     height: 200px;
 	background-repeat: no-repeat;
-    background-image: url(../images/tshirt1.png);
 }
 .jeans_img{
-    width: 147px;
-    height: 204px;
-	background-repeat: no-repeat;
-    background-image: url(../images/jeans1.png);
+    width: 198px;
+    height: 200px;
+/*	background-repeat: no-repeat;*/
+/*    background-image: url(../images/jeans1.png);*/
 }
 .shirt_img, .orange_tshirt_img{
-	display: none;
+	width: 198px;
+    height: 200px;
 }
 .new-arrivals_text{
 	display: flex;
@@ -306,9 +307,9 @@ h1{
     line-height: normal;
     white-space: nowrap;
 }
-.text1{
+/*.text1{
 	display: none;
-}
+}*/
 .new-arrivals_evaluation{
     display: flex;
     justify-content: space-between;
@@ -323,17 +324,26 @@ h1{
     height: 18px;
     background-image: url(../images/star.svg);
 }
+.rating-shirt{
+	width: 85px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.rating-orange_t-shirt{
+	width: 85px;
+	height: 18px;
+	background-image: url(../images/star.svg);
+}
 .number{
     color: #000;
     font-family: Satoshi;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
-    margin-left: 13px;
 }
-.rating-shirt, .rating-shirt_1, .rating-orange_t-shirt, .rating-orange_t-shirt_1{
+/*.rating-shirt, .rating-shirt_1, .rating-orange_t-shirt, .rating-orange_t-shirt_1{
 	display: none;
-}
+}*/
 .prices{
     display: flex;
     color: #000;
@@ -341,15 +351,15 @@ h1{
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
-    justify-content: space-between;
-    padding: 5px 5px 24px 13px;
+    column-gap: 10px;
+/*    padding: 5px 5px 24px 13px;*/
 }
 .price-jeans{
     display: flex;
 }
-.price-shirt, .price-orange_tshirt{
+./*price-shirt, .price-orange_tshirt{
 	display: none;
-}
+}*/
 .ellipse_2{
     display: flex;
     width: 42px;
@@ -397,23 +407,24 @@ h1{
   background-size: cover; /* Адаптивне зміщення зображення */
 }
 .shorts_img, .skinny-jeans_img{
-	display: none;
+	width: 198px;
+    height: 200px;
 }
 .striped-shirt_img{
 	width: 198px;
     height: 200px;
-    background-repeat: no-repeat;
-	background-image: url(../images/stripedshirt.png);
+/*    background-repeat: no-repeat;
+	background-image: url(../images/stripedshirt.png);*/
 }
 .graphic-tshirt_img{
-    width: 147px;
-    height: 204px;
-    background-repeat: no-repeat;
-	background-image: url(../images/graphictshirt.png);
+    width: 198px;
+    height: 200px;
+/*    background-repeat: no-repeat;
+	background-image: url(../images/graphictshirt.png);*/
 }
-.shorts_text, .skinny-jeans_text{
+/*.shorts_text, .skinny-jeans_text{
 	display: none;
-}
+}*/
 .top-selling_text{
 	display: flex;
 	justify-content: space-around;
@@ -434,13 +445,13 @@ h1{
 .price-striped-shirt{
     display: flex;
 }
-.price-shorts, .price-skinny-jeans{
+/*.price-shorts, .price-skinny-jeans{
 	display: none;
-}
+}*/
 .ellipse_5{
     width: 42px;
     height: 20px;
-    padding: 6px 14px;
+    padding: 3px 9px;
     justify-content: center;
     border-radius: 62px;
     color: rgba(255, 51, 51, 1);
@@ -450,9 +461,7 @@ h1{
     text-align: center;
     background: rgba(255, 51, 51, 0.1);
 }
-.graphic-tshirt {
-    margin-left: 76px;
-}
+
 .style{
 	width: 358px;
 	height: 975px;
@@ -612,7 +621,7 @@ h1{
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 35px;
-	margin-bottom: 32px;
+	margin-bottom: 16px;
 }
 .input_field{
 	display: flex;
@@ -783,7 +792,40 @@ h1{
     right: 0;
     top: 20px;
 }
-
+/*.rating-skinny-jeans, .rating-shorts_1, .rating-skinny-jeans_1 {
+    display: none;
+}*/
+.rating-graphic-tshirt{
+    width: 74px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.rating-shorts{
+	display: block;
+    width: 55px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.rating-striped-shirt{
+	display: block;
+	width: 93px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.rating-skinny-jeans {
+	display: flex;
+    width: 85px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.rating-striped-shirt{
+    width: 93px;
+    height: 18px;
+    background-image: url(../images/star.svg);
+}
+.search-wrap{
+	display: none;
+}
 
 
 
@@ -804,7 +846,63 @@ h1{
 		font-size: 14px;
 	}
 }
+@media (min-width: 360px) and (max-width: 361px){
+	.offers{
+		width: 348px;
+		margin-left: -4px;
+	}
+	.style{
+		width: 343px;
+		margin-left: -1px;
+	}
+	.image-line{
+		margin-left: -7px;
+		margin-top: -10px;
+	}
+	.name-style{
+		margin-bottom: 36px;
+		margin-left: 20px;
+	}
+}
 
+/*footer*/
+@media (min-width: 396px){
+	.footer_1{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 67px;
+		margin: 20px;
+	}
+	.style, .offers, .reviews_block{
+		margin: 5px auto;
+	}
+}
+/*Line*/
+@media (min-width: 466px){
+	.line {
+    	width: 426px;
+	}
+	.ellipse_4{
+		margin: 20px auto;
+		width: 358px;
+	    text-decoration: none;
+	}
+	.offers{
+	    margin: 20px auto;
+	}
+	.style{
+		margin: 20px auto;
+	}
+}
+
+@media (min-width: 485px) and (max-width: 598px) {
+	.star_1 {
+		left: 80%;
+	}
+	.star_2{
+		top: 7%;
+	}
+}
 
 /*Small-lina classes*/
 @media (min-width: 600px){
@@ -822,7 +920,482 @@ h1{
 	}
 }
 
+@media (min-width: 725px){
+	.arrow{
+	    right: 1%;
+	}
+}
 
+@media (min-width: 362px) and (max-width: 599px){
+	.name-style{
+	    margin: 6px 26px auto;
+	}
+	.image-line{
+		margin-top: 32px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 394px) {
+	.star_1 {
+		left: 20%;
+	}
+	.star_2{
+		top: 7%;
+	}
+	.ellipse{
+		width: 286px;
+	}
+	.discription{
+		width: 300px;
+	}
+	.ellipse_4{
+		width: 293px;
+	}
+	.line{
+		width: 290px;
+	}
+	.arrow{
+		right: 0%;
+	}
+	.reviews_1{
+		width: 288px;
+	}
+}
+
+@media (min-width: 599px){
+	.star_1{
+		display: flex;
+		width: 104px;
+		height: 104px;
+		position: relative;
+	    bottom: 90%;
+    	left: 78%;
+		background-image: url(../images/Vector.svg);
+	}
+	.star_2{
+		width: 56px;
+		height: 56px;
+		position: absolute;
+	   	top: 78%;
+    	right: 23%;
+		background-image: url(../images/Vector1.svg);
+	}
+	.jumbotron_1{
+		display: none;
+	}
+}
+@media (min-width: 600px){
+	.jumbotron{
+		background-size: cover;
+		height: 663px;
+		font-size: 64px;
+		background-image: url(../images/rectangle2.png);
+	}
+	.jumbotron h1{
+		width: 577px;
+		height: 173px;
+		font-size: 64px;
+		line-height: 64px;
+		position: sticky;
+    	left: 60px;
+    	margin-bottom: 20px;
+	}
+	.jumbotron_1{
+		display: none;
+		background: transparent;
+	}
+
+}
+@media (min-width: 600px){
+	.input_field_text:hover{
+		background: black;
+		border-radius: 62px;
+	    color: white;
+	    font-family: Satoshi;
+	    font-size: 14px;
+	    font-weight: 500;
+	    text-align: center;
+	    text-decoration: none;
+	}
+}
+@media (min-width: 600px){
+	.new-arrivals_1{
+	    font-size: 48px;
+	    row-gap: 20px;
+	}
+	.t-shirt_text, .jeans_text{
+	    font-size: 20px;
+	    font-weight: 700;
+	    
+	}
+	.line{
+	    width: 98%;
+	    height: 1px;
+	    margin-bottom: 64px;
+	    background: rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media (min-width: 600px){
+	.new-arrivals_img {
+	    display: flex;
+	    justify-content: space-between;
+	    margin-bottom: 40px;
+	    gap: 20px;
+	}
+	.card {
+		width: 127%;
+		height: 444px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.t-shirt_img{
+	    background-image: url(../images/tshirt.png);
+	}
+	.jeans_img{
+	    background-image: url(../images/jeans.png);
+	}
+	.shirt_img{
+		display: block;
+	    background-image: url(../images/shirt.png);
+	}
+	.orange_tshirt_img{
+		display: block;
+	    background-image: url(../images/orangetshirt.png);
+	}
+}
+@media (min-width: 600px){
+	.discription{
+		position: sticky;
+		left: 60px;
+		font-size: 16px;
+		line-height: 22px;
+		width: 598px;
+	    height: 33px;
+	    white-space: pre-line;
+	    margin-bottom: 50px;
+	}
+	.ellipse{
+		width: 210px;
+		height: 52px;
+		left: 60px;
+    	position: relative;
+	}
+	.ellipse:hover{
+		background: white;
+		border-radius: 62px;
+	    color: black;
+	    font-family: Satoshi;
+	    font-size: 16px;
+	    font-weight: 500;
+	    text-align: center;
+	}
+	.count{
+		font-size: 40px;
+	}
+	.count_title{
+		font-size: 16px;
+		white-space: nowrap;
+	}
+	.achievement_2{
+		display: none;
+	}
+	.achievement_3{
+		    display: block;
+	    font-size: 40px;
+	    width: 171px;
+	    margin-left: 70px;
+	}
+	.barrier{
+		width: 1px;
+		height: 74px;
+	    margin-left: 230px;
+	}
+	.barrier_1{
+		display: flex;
+		width: 1px;
+		height: 74px;
+		background: rgba(0, 0, 0, 0.10);
+		position: absolute;
+	    margin-left: 460px;
+	}
+
+}
+@media (min-width: 600px) {
+	.menu-list.hide {
+		display: flex !important;
+		background: transparent;
+		position: relative;
+    	top: 8%;
+	}
+	.menu-list li {
+	    position: relative;
+	    font-size: 16px;
+	    white-space: nowrap;
+	}
+	.shorts_text, .skinny-jeans_text{
+		display: flex;
+	}
+	.number{
+	    color: #000;
+	    font-family: Satoshi;
+	    font-size: 14px;
+	    font-weight: 400;
+	    line-height: normal;
+	    display: flex;
+	}
+	.stars{
+		display: flex;
+	}
+	.rating-shirt{
+		width: 85px;
+    	height: 18px;
+    	background-image: url(../images/star.svg);
+	}
+	.rating-orange_t-shirt{
+	    width: 85px;
+	    height: 18px;
+	    background-image: url(../images/star.svg);
+	}
+	.rating_1{
+		display: flex;
+	}
+	.stars{
+		margin-right: 20px;
+	}
+
+	.price-shirt, .price-orange_tshirt{
+		display: flex;
+	}
+	.image{
+		background-repeat: no-repeat;
+		width: 295px;
+		height: 298px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	.skinny-jeans_img{
+		background: #F0EEED;
+		padding: 0px 21px 0px 22px;
+	}
+	.shorts_img, .skinny-jeans_img{
+		display: block;
+	}
+	.style{
+		width: 96%;
+		height: 961px;
+	}
+	.image-line{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.photo{
+		border-radius: 20px;
+	}
+	.photo > img{
+		width: 100% !important;
+		height: 100%;
+	}
+	.image-casual{
+		width: 429px;
+    	height: 197px;
+    	margin: 3px auto;
+    	border-radius: 20px;
+    	margin-bottom: 20px;
+	}
+	.image-formal{
+  		width: 429px;
+    	height: 197px;
+    	margin: 6px auto;
+	}
+	.image-party{
+		width: 429px;
+    	height: 197px;
+    	margin: 6px auto;
+	}
+	.image-gym-block{
+		width: 429px;
+    	height: 197px;
+    	margin: 6px auto;
+	}
+	img{
+		border-radius: 20px;
+	}
+	.price-shorts, .price-skinny-jeans{
+		display: flex;
+	}
+	.prices_1{
+		padding: 0px 242px 20px 3px;
+	}
+	.top-selling_text{
+		padding: 0px -1px 10px 0px;
+	}
+	.ellipse_5{
+		padding: 4px 18px 0px 11px;
+	}
+	.graphic-tshirt{
+		margin-left: inherit;
+	}
+	.name-style{
+		width: 96%;
+	    display: flex;
+	    justify-content: center;
+	    height: 98px;
+	    align-items: center;
+	    margin-bottom: 0px;
+	}
+	.name-style_1.name-style_2{
+		position: absolute;
+  		margin-top: -213px;
+	}
+	.name-style_1.name-style_3{
+		position: absolute;
+  		margin-top: -213px;
+	}
+	.name-style_1.name-style_4{
+		position: absolute;
+  		margin-top: -213px;
+	}
+	.name-style_1.name-style_5{
+		margin-left: 5px;
+		position: absolute;
+  		margin-top: -213px;
+	}
+	.image-gym{
+		margin-left: 93px;
+	}
+	.title-reviews{
+		white-space: nowrap;
+		margin-left: 3%;
+	}
+	.reviews_block{
+		display: flex;
+		padding: 0px 20px 0px 20px;
+		gap: 50px;
+	}
+	.reviews_2{
+		display: block;
+		width: 358px;
+		padding: 24px;
+	    border-radius: 20px;
+	    border: 1px solid rgba(0, 0, 0, 0.10);
+	    color: rgba(0, 0, 0, 0.60);
+	    font-family: Satoshi;
+	    font-size: 16px;
+	    font-weight: 400;
+	    line-height: 22px;
+	    margin-top: 155px;
+	    margin-bottom: 49px;
+	}
+	.offers{
+		width: 95%;
+		height: 180px;
+		display: flex;
+		padding: 36px 64px;
+	}
+	.offers_title{
+		width: 569px;
+  		font-size: 40px;
+	}
+	.field{
+		display: block;
+		margin-left: -181px;
+	}
+	.input_field, .input_field_1{
+		width: 349px;
+  		height: 48px;
+  		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 142px;
+	}
+	.input_field_inside> input{
+		width: 245px;
+	    height: 25px;
+	    margin-top: -24px;
+	    font-size: 16px;
+	}
+	.input_field_inside{
+		background: rgb(240, 240, 240);
+	}
+	.fa-regular.fa-envelope{
+		width: 24px;
+		height: 24px;
+		font-size: 23px;
+	}
+	.fa-brands.fa-cc-visa, .fa-brands.fa-cc-mastercard, .fa-brands.fa-cc-paypal, .fa-brands.fa-apple-pay, .fa-brands.fa-google-pay{
+		margin-right: 12px;
+	}
+	.pay{
+		padding: 15px 59px 7px 14px;
+		justify-content: flex-end;
+	}
+	.search_1> input{
+		display: flex;
+	}
+
+}
+@media (min-width: 600px){
+	.rating-shorts{
+		display: block;
+	    width: 55px;
+	    height: 18px;
+	    background-image: url(../images/star.svg);
+	}
+	.rating-striped-shirt{
+		display: block;
+		width: 93px;
+	    height: 18px;
+	    background-image: url(../images/star.svg);
+	}
+	.rating-skinny-jeans {
+		display: flex;
+	    width: 85px;
+	    height: 18px;
+	    background-image: url(../images/star.svg);
+	}
+	
+	.social_networks{
+		margin-bottom: 20px;
+	}
+	.search_1 {
+	    display: flex;
+	}
+	.end{
+		display: inline-flex;
+	}
+
+}
+/*@media (min-width: 600px) and (max-width: 618) {
+	.field{
+		margin-left: -45px;
+	}
+}
+*/
+@media (min-width: 680px) {
+	.search .fa-solid.fa-magnifying-glass {
+		display: block;
+	}
+	.search{
+		width: 364px;
+	}
+	input{
+		width: 49px;
+	}
+	.logo {
+	    position: relative;
+    	left: 5%;
+    	font-size: 32px;
+	}
+	.main-list {
+/*		margin-left: 10px;*/
+	}
+	.menu-list li {
+	    margin-right: 18px;
+	    font-size: 16px;
+	    white-space: nowrap;
+	}
+}
 
 /*media queries*/
 
@@ -856,19 +1429,39 @@ h1{
 	}
 	.search{
 		order: 2;
-    	width: 60px;
+    	width: 300px;
     	height: 30px;
     	display: flex;
-    	padding: 12px 16px;
     	align-items: flex-start;
     	gap: 12px;
-    	background: rgba(240, 240, 240, 1);
-    	border-radius: 62px;
-    	margin-right: -61px;
+ 
+	}
+	.search-wrap {
+	  position: relative;
+	  display: block;
+	  max-width: 570px;
+	  width: 100%;
+	  height: 48px;
+	}
+	.search-field {
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  padding-left: 50px;
+	  background: rgba(240, 240, 240, 1);
+	  border-radius: 62px;
+	  border: none;
+	  outline: none;
+	}
+
+	.fa-solid.fa-magnifying-glass {
+	  position: absolute;
+	  left: 16px;
+	  top: 12px;
+	  width: 24px;
+	  height: 24px;
 	}
 	.search .fa-magnifying-glass{
-		position: relative;
-		top: -5px;
 		display: block;
 	}
 	input{
@@ -904,68 +1497,21 @@ h1{
 	}
 
 }
-@media (min-width: 600px){
-	.discription{
-		position: sticky;
-		left: 60px;
-		font-size: 16px;
-		line-height: 22px;
-		width: 599px;
-	    height: 33px;
-	    white-space: pre-line;
-	    margin-bottom: 50px;
-	}
-	.ellipse{
-		width: 210px;
-		height: 52px;
-		left: 60px;
-    	position: relative;
-	}
-	.count{
-		font-size: 40px;
-	}
-	.count_title{
-		font-size: 16px;
-		white-space: nowrap;
-	}
-	.achievement_2{
-		display: none;
-	}
-	.achievement_3{
-		    display: block;
-	    font-size: 40px;
-	    width: 171px;
-	    margin-left: 70px;
-	}
-	.barrier{
-		width: 1px;
-		height: 74px;
-	    margin-left: 230px;
-	}
-	.barrier_1{
-		display: flex;
-		width: 1px;
-		height: 74px;
-		background: rgba(0, 0, 0, 0.10);
-		position: absolute;
-	    margin-left: 460px;
-	}
-
-}
 @media (min-width: 738px){
 	.name-style{
        	font-size: 48px;
-    	margin-bottom: 50px;
+    	margin-bottom: 7px;
 	}
 	.ellipse_4{
-		width: 218px;
 		height: 52px;
 	    padding: 16px 54px;
 	    font-size: 16px;
 	    line-height: normal;
 	    margin-bottom: 50px;
 	    position: relative;
-	    left: 37%;
+	    margin: 20px auto;
+		width: 358px;
+	    text-decoration: none;
 	}
 	.ellipse_4:hover{
 		background: black;
@@ -977,74 +1523,16 @@ h1{
 	    text-align: center;
 	}
 }
-@media (min-width: 600px){
-	.jumbotron{
-		background-size: cover;
-		height: 663px;
-		font-size: 64px;
-		background-image: url(../images/rectangle2.png);
-	}
-	.jumbotron h1{
-		width: 577px;
-		height: 173px;
-		font-size: 64px;
-		line-height: 64px;
-		position: sticky;
-    	left: 60px;
-    	margin-bottom: 20px;
-	}
-	.jumbotron_1{
-		display: flex;
-		background: transparent;
-	}
-
-}
-@media (min-width: 599px){
-	.star_1{
-		width: 104px;
-		height: 104px;
-		position: relative;
-	    bottom: 90%;
-    	left: 78%;
-		background-image: url(../images/Vector.svg);
-	}
-	.star_2{
-		width: 56px;
-		height: 56px;
-		position: absolute;
-	   	top: 78%;
-    	right: 23%;
-		background-image: url(../images/Vector1.svg);
-	}
-	.jumbotron_1{
-		display: none;
-	}
-}
-@media (min-width: 600px){
-	.new-arrivals_img {
+@media (min-width: 739px){
+	.footer_1 {
 	    display: flex;
-	    justify-content: space-between;
-	    column-gap: 20px;
+	    gap: 161px;
+	    padding: 0px 13px;
 	}
-	.card {
-		width: 25%;
-		height: 444px;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.t-shirt_img{
-	    background-image: url(../images/tshirt.png);
-	}
-	.jeans_img{
-	    background-image: url(../images/jeans.png);
-	}
-	.shirt_img{
-		display: block;
-	    background-image: url(../images/shirt.png);
-	}
-	.orange_tshirt_img{
-		display: block;
-	    background-image: url(../images/orangetshirt.png);
+}
+@media (min-width: 764px){
+	input{
+		width: 150px;
 	}
 }
 
@@ -1077,6 +1565,60 @@ h1{
 		width: 206px;
 		height: 33px;
 		margin-top: 44px;
+	}
+}
+@media (min-width: 926px){
+	.name-style{
+		width: 894px;
+	    display: flex;
+	    justify-content: center;
+	    height: 171px;
+	    align-items: center;
+	    margin: auto;
+	}
+	.name-style_1.name-style_2{
+		position: absolute;
+  		margin-top: -275px;
+	}
+	.name-style_1.name-style_3{
+		position: absolute;
+  		margin-top: -275px;
+	}
+	.name-style_1.name-style_4{
+		position: absolute;
+  		margin-top: -275px;
+	}
+	.name-style_1.name-style_5{
+		margin-left: 5px;
+		position: absolute;
+  		margin-top: -275px;
+	}
+	.image-casual{
+		width: 429px;
+    	height: 290px;
+    	border-radius: 20px;
+    	margin-bottom: 20px;
+	}
+	.image-formal{
+  		width: 689px;
+	    height: 293px;
+	    margin-left: 20px;
+	}
+	.image-party{
+		width: 663px;
+		height: 289px;
+	}
+	.image-gym-block{
+		width: 453px;
+	    height: 289px;
+	    margin-left: 20px;
+	}
+	.photo > img{
+		width: 100% !important;
+    	height: 100%;
+	}
+	.style{
+		height: 866px;
 	}
 }
 @media (min-width: 933px){
@@ -1152,263 +1694,11 @@ h1{
     margin-left: 10px;
 }
 
-.search .fa-solid.fa-magnifying-glass {
+/*.search .fa-solid.fa-magnifying-glass {
 	display: none;
 }
-
-@media (min-width: 680px) {
-	.search .fa-solid.fa-magnifying-glass {
-		display: block;
-	}
-	.search{
-		width: 364px;
-	}
-	input{
-		width: 49px;
-	}
-	.logo {
-	    position: relative;
-    	left: 5%;
-    	font-size: 32px;
-	}
-	.main-list {
-		margin-left: 10px;
-	}
-	.menu-list li {
-	    margin-right: 18px;
-	    font-size: 16px;
-	    white-space: nowrap;
-	}
-}
-@media (min-width: 764px){
-	input{
-		width: 150px;
-	}
-}
-
-@media (min-width: 600px){
-	.new-arrivals_1{
-	    font-size: 48px;
-	}
-	.t-shirt_text, .jeans_text{
-	    font-size: 20px;
-	    font-weight: 700;
-	    
-	}
-	.line{
-	    width: 104%;
-	    height: 1px;
-	    margin-bottom: 64px;
-	    background: rgba(0, 0, 0, 0.1);
-	}
-}
+*/
 
 .hide{
 	display: none !important;
-}
-@media (min-width: 600px) {
-	.menu-list.hide {
-		display: flex !important;
-		background: transparent;
-		position: relative;
-    	top: 8%;
-	}
-	.menu-list li {
-	    position: relative;
-	    font-size: 16px;
-	    white-space: nowrap;
-	}
-	.shorts_text, .skinny-jeans_text{
-		display: flex;
-	}
-	.number{
-	    color: #000;
-	    font-family: Satoshi;
-	    font-size: 14px;
-	    font-weight: 400;
-	    line-height: normal;
-	    margin-left: 13px;
-	    display: flex;
-	}
-	.stars{
-		display: flex;
-	}
-	.rating-shirt{
-		width: 85px;
-    	height: 18px;
-    	background-image: url(../images/star.svg);
-	}
-	.rating-orange_t-shirt{
-	    width: 85px;
-	    height: 18px;
-	    background-image: url(../images/star.svg);
-	}
-
-	.price-shirt, .price-orange_tshirt{
-		display: flex;
-	}
-	.image{
-		background-repeat: no-repeat;
-		width: 295px;
-		height: 298px;
-		border-radius: 20px;
-		overflow: hidden;
-	}
-	.skinny-jeans_img{
-		background: #F0EEED;
-		padding: 0px 21px 0px 22px;
-	}
-	.shorts_img, .skinny-jeans_img{
-		display: block;
-	}
-	.style{
-		width: 1239px;
-		height: 866px;
-	}
-	.image-line{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.photo{
-		border-radius: 20px;
-	}
-	.photo > img{
-		width: 100% !important;
-		height: 100%;
-	}
-	.image-casual{
-		width: 429px;
-    	height: 290px;
-    	border-radius: 20px;
-    	margin-bottom: 20px;
-	}
-	.image-formal{
-  		width: 689px;
-	    height: 293px;
-	    margin-left: 20px;
-	}
-	.image-party{
-		width: 663px;
-		height: 289px;
-	}
-	.image-gym-block{
-		width: 453px;
-	    height: 289px;
-	    margin-left: 20px;
-	}
-	img{
-		border-radius: 20px;
-	}
-	.price-shorts, .price-skinny-jeans{
-		display: flex;
-	}
-	.prices_1{
-		padding: 0px 242px 20px 3px;
-	}
-	.top-selling_text{
-		padding: 0px -1px 10px 0px;
-	}
-	.ellipse_5{
-		padding: 4px 18px 0px 11px;
-	}
-	.graphic-tshirt{
-		margin-left: inherit;
-	}
-	.name-style{
-		width: 1187px;
-	    display: flex;
-	    justify-content: center;
-	    height: 171px;
-	    align-items: center;
-	    margin-bottom: 0px;
-	}
-	.name-style_1.name-style_2{
-		position: absolute;
-  		margin-top: -275px;
-	}
-	.name-style_1.name-style_3{
-		position: absolute;
-  		margin-top: -275px;
-	}
-	.name-style_1.name-style_4{
-		position: absolute;
-  		margin-top: -275px;
-	}
-	.name-style_1.name-style_5{
-		margin-left: 5px;
-		position: absolute;
-  		margin-top: -275px;
-	}
-	.image-gym{
-		margin-left: 93px;
-	}
-	.title-reviews{
-		white-space: nowrap;
-	}
-	.reviews_block{
-		display: flex;
-		padding: 0px 20px 0px 20px;
-		gap: 50px;
-	}
-	.reviews_2{
-		display: block;
-		width: 358px;
-		padding: 24px;
-	    border-radius: 20px;
-	    border: 1px solid rgba(0, 0, 0, 0.10);
-	    color: rgba(0, 0, 0, 0.60);
-	    font-family: Satoshi;
-	    font-size: 16px;
-	    font-weight: 400;
-	    line-height: 22px;
-	    margin-top: 155px;
-	    margin-bottom: 49px;
-	}
-	.offers{
-		width: 1240px;
-		height: 180px;
-		display: flex;
-		padding: 36px 64px;
-	}
-	.offers_title{
-		width: 569px;
-  		font-size: 40px;
-	}
-	.field{
-		display: block;
-	}
-	.input_field, .input_field_1{
-		width: 349px;
-  		height: 48px;
-  		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-left: 142px;
-	}
-	input{
-		width: 245px;
-	    height: 25px;
-	    margin-top: -24px;
-    	margin-left: 34px;
-	    font-size: 16px;
-	}
-	.input_field_inside{
-		background: rgb(240, 240, 240);
-	}
-	.fa-regular.fa-envelope{
-		width: 24px;
-		height: 24px;
-		font-size: 23px;
-	}
-	.fa-brands.fa-cc-visa, .fa-brands.fa-cc-mastercard, .fa-brands.fa-cc-paypal, .fa-brands.fa-apple-pay, .fa-brands.fa-google-pay{
-		margin-right: 12px;
-	}
-	.pay{
-		padding: 15px 59px 7px 14px;
-		justify-content: flex-end;
-	}
-	.search_1> input{
-		display: flex;
-	}
-
 }

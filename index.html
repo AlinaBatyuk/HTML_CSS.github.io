@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SHOP.CO</title>
     <link  rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
 	<div class="smal-line">
@@ -31,10 +32,14 @@
 					SHOP.CO
 				</div>
 				<div class="search">
-					<i class="fa-solid fa-magnifying-glass"></i>
+					<!-- <i class="fa-solid fa-magnifying-glass"></i>
 					<div class="search_1">
             			<input type="text" placeholder="Search for products...">
-            		</div>
+            		</div> -->
+            		<div class="search-wrap">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input type="text" placeholder='Search for products...' class='search-field'>
+					</div>
         		</div>
 				<div class="main-menu_1">
 					<div class="main-menu-item_1">
@@ -61,9 +66,9 @@
 			<div class="discription">
 	             Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
 	        </div>
-	        <div class="ellipse">
+	        <a href="/* сайт зі всіма речима*/" class="ellipse">
 	            Shop Now
-	        </div>
+	        </a>
 	        <div class="achievement">
 	            <div class="achievement_1">
 	                <div class="count">200+</div>
@@ -78,7 +83,8 @@
 	            <div class="achievement_3">
 	                <div class="count">30,000+</div>
 	                <div class="count_title">Happy Customers</div>
-	        </div>
+
+	        	</div>
 	        </div>
  		</div>
  	</div>
@@ -114,45 +120,85 @@
 			<div class="new-arrivals_title">
 				NEW ARRIVALS
 			</div>
-			<div class="new-arrivals_img">
-				<div class="card t-shirt_img"></div>
-				<div class="card jeans_img"></div>
-				<div class="card shirt_img"></div>
-        		<div class="card orange_tshirt_img"></div>
-			</div>
-			<div class="new-arrivals_text">
-				<div class="text">T-shirt with Tape etails</div>
-           		<div class="text">Skinny Fit Jeans</div>
-           		<div class="text1">Checkered Shirt</div>
-           		<div class="text1">Sleeve Striped T-shirt</div>
-			</div>
-			<div class="new-arrivals_evaluation">
-				<div class="stars rating-t-shirt"></div>
-	            <div class="number rating-t-shirt_1">4.5/5</div>
-	            <div class="stars rating-jeans"></div>
-	            <div class="number rating-jeans_1">3.5/5</div>
-	            <div class="stars rating-shirt"></div>
-           		<div class="number rating-shirt_1">4.5/5</div>
-           		<div class="stars rating-orange_t-shirt"></div>
-           		<div class="number rating-orange_t-shirt_1">4.5/5</div>
+			<div class="swiper mySwiper">
+				<div class="new-arrivals_img swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="new-arrivals_1">
+							<div class="card image t-shirt_img">
+								<img src="images/tshirt.png">
+							</div>
+							<div class="text">T-shirt with Tape etails</div>
+							<div class="rating_1">
+								<div class="stars rating-t-shirt"></div>
+					            <div class="number rating-t-shirt_1">4.5/5</div>
+					        </div>
+				            <div class="prices price price-tshirt">$120</div>
+			        	</div>
+			        </div>
+			    	<div class="swiper-slide">
+				        <div class="new-arrivals_2">
+							<div class="card image jeans_img">
+								<img src="images/jeans.png">
+							</div>
+							<div class="text">Skinny Fit Jeans</div>
+							<div class="rating_1">
+								<div class="stars rating-jeans"></div>
+				            	<div class="number rating-jeans_1">3.5/5</div>
+				            </div>
+			            	<div class="prices price price-jeans">
+			               		$240
+			               		<span class="through">$260</span>
+			               		<div  class="ellipse_5">-20%</div>
+		       				</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="new-arrivals_3">
+							<div class="card image shirt_img">
+								<img src="images/shirt.png">
+							</div>
+							<div class="text">Checkered Shirt</div>
+							<div class="rating_1">
+								<div class="stars rating-shirt"></div>
+			           			<div class="number rating-shirt_1">4.5/5</div>
+			           		</div>
+		           			<div class="prices price price-shirt">$180</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="new-arrivals_4">
+			        		<div class="card image orange_tshirt_img">
+			        			<img src="images/orangetshirt.png">
+			        		</div>
+			        		<div class="text">Sleeve Striped T-shirt</div>
+			        		<div class="rating_1">
+				        		<div class="stars rating-orange_t-shirt"></div>
+			           			<div class="number rating-orange_t-shirt_1">4.5/5</div>
+			           		</div>
+		           			<div class="prices price-orange_tshirt">
+				               	$130
+				               	<span class="through">$160</span>
+				               	<div  class="ellipse_5">
+				                   	-30%
+				               	</div>
+				           	</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="prices">
-           	<div class="price price-tshirt">$120</div>
-           	<div class="price price-jeans">
-               	$240
-               	<span class="through">$260</span>
-               	<div  class="ellipse_2">-20%</div>
-       		</div>
-           	<div class="price price-shirt">$180</div>
-           	<div class="price-orange_tshirt">
-               	$130
-               	<span class="through">$160</span>
-               	<div  class="ellipse_2">
-                   	-30%
-               	</div>
-           	</div>
-       	</div>
+			<!-- <div class="new-arrivals_text">
+           		
+           		
+			</div>
+			<div class="new-arrivals_evaluation">
+	            
+           		
+			</div> -->
+			
+		<!-- <div class="prices">     	
+           	
+       	</div> -->
        	<a href="/* сайт зі всіма речима*/" class="ellipse_4">
             View All
         </a>
@@ -161,44 +207,80 @@
         	<div class="new-arrivals_title">
 				TOP SELLING
 			</div>
-			<div class="new-arrivals_img">
-				<div class="image striped-shirt_img">
-					<img src="images/stripedshirt.png">
-				</div>
-				<div class="image graphic-tshirt_img">
-					<img src="images/graphictshirt.png">
-				</div>
-				<div class="image shorts_img">
-					<img src="images/shorts.png">
-				</div>
-				<div class="image skinny-jeans_img">
-					<img src="images/skinnyjeans.png">
+			<div class="swiper mySwiper">
+				<div class="new-arrivals_img swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="new-arrivals_1">
+							<div class="image striped-shirt_img">
+								<img src="images/stripedshirt.png">
+							</div>
+							<div class="text">
+								Vertical Striped Shirt
+							</div>
+							<div class="rating_1">
+								<div class="stars rating-striped-shirt"></div>
+			            		<div class="number rating-striped-shirt_1">5.0/5</div>
+			            	</div>
+							<div class="prices price-striped-shirt">
+				                $212
+				                <span class="through">$232</span>
+				                <div  class="ellipse_5">-20%</div>
+				            </div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="new-arrivals_1">
+							<div class="image graphic-tshirt_img">
+								<img src="images/graphictshirt.png">
+							</div>
+							<div class="text graphic-tshirt">
+			           			Courage Graphic
+			           		</div>
+			           		<div class="rating_1">
+				           		<div class="stars rating-graphic-tshirt"></div>
+			            		<div class="number rating-graphic-tshirt_1">4.0/5</div>
+			            	</div>
+			           		<div class="prices price-graphic-tshirt">$145</div>
+			           	</div>
+			        </div>
+			        <div class="swiper-slide">
+			           	<div class="new-arrivals_1">
+							<div class="image shorts_img">
+								<img src="images/shorts.png">
+							</div>
+							<div class="text shorts_text">
+			           			Loose Fit Bermuda Shorts
+			           		</div>
+			           		<div class="rating_1">
+				           		<div class="stars rating-shorts"></div>
+			            		<div class="number rating-shorts_1">3.0/5</div>
+			            	</div>
+			           		<div class="prices price-shorts">$80</div>
+			           	</div>
+			        </div>
+			        <div class="swiper-slide">
+			           	<div class="new-arrivals_1">
+							<div class="image skinny-jeans_img">
+								<img src="images/skinnyjeans.png">
+							</div>
+							<div class="text skinny-jeans_text">
+			           			Faded Skinny Jeans
+			           		</div>
+			           		<div class="rating_1">
+				           		<div class="stars rating-skinny-jeans"></div>
+			            		<div class="number rating-skinny-jeans_1">4.5/5</div>
+			            	</div>
+			           		<div class="prices price-skinny-jeans">$210</div>
+			           	</div>
+			        </div>
 				</div>
 			</div>
-			<div class="top-selling_text">
-				<div class="text">
-					Vertical Striped Shirt
-				</div>
-           		<div class="text graphic-tshirt">
-           			Courage Graphic
-           		</div>
-           		<div class="text shorts_text">
-           			Loose Fit Bermuda Shorts
-           		</div>
-           		<div class="text skinny-jeans_text">
-           			Faded Skinny Jeans
-           		</div>
+			<!-- <div class="top-selling_text">
+			
 			</div>
 			<div class="prices_1">
-	            <div class="price-striped-shirt">
-	                $212
-	                <span class="through">$232</span>
-	                <div  class="ellipse_5">-20%</div>
-	            </div>
-	            <div class="price-graphic-tshirt">$145</div>
-		           <div class="price-shorts">$80</div>
-		           <div class="price-skinny-jeans">$210</div>
-        	</div>
+	        
+        	</div> -->
         	<a href="" class="ellipse_4">
 	           	View All
 	       	</a>
@@ -282,15 +364,19 @@
         	</div>
         	<div class="field">
 	        	<div class="input_field">
-	        		<div class="input_field_inside">
+	        		<!-- <div class="input_field_inside">
 	        			<i class="fa-regular fa-envelope"></i>
 	        			<input type="text" placeholder="Enter your email address">
-	        		</div>
+	        		</div> -->
+	        		<div class="input_field_inside">
+						<i class="fa-regular fa-envelope"></i>
+						<input type="text" placeholder='Enter your email address' class='search-field'>
+					</div>
 	        	</div>
 	        	<div class="input_field_1">
-	        		<div class="input_field_text">
-	        			Subscribe to Newsletter
-	        		</div>
+	        		<a href="/* сайт зі всіма речима*/" class="input_field_text">
+			            Subscribe to Newsletter
+			        </a>
 	        	</div>
 	        </div>
         </div>
@@ -314,91 +400,90 @@
         		<i class="fa-brands fa-github"></i>
         	</a>
         </div>
-        <div class="footer">
-	        <div class="company">
-	        	<div class="company_title">
-	        		COMPANY
-	        	</div>
-	        	<div class="company_text">About</div>
-	        	<div class="company_text">Features</div>
-	        	<div class="company_text">Works</div>
-	        	<div class="company_text">Career</div>
-	        </div>
-	         <div class="help">
-	        	<div class="help_title">
-	        		HELP
-	        	</div>
-	        	<div class="help_text">
-	        		Customer Support
-	        	</div>
-	        	<div class="help_text">
-	        		Delivery Details
-	        	</div>
-	        	<div class="help_text">
-	        		Terms & Conditions
-	        	</div>
-	        	<div class="help_text">
-	        		Privacy Policy
-	        	</div>
-	        </div>
-	    </div>
-	    <div class="footer">
-	        <div class="help">
-	        	<div class="help_title">
-	        		FAQ
-	        	</div>
-	        	<div class="help_text">
-	        		Account
-	        	</div>
-	        	<div class="help_text">
-	        		Manage Deliveries
-	        	</div>
-	        	<div class="help_text">
-	        		Terms & Conditions
-	        	</div>
-	        	<div class="help_text">
-	        		Privacy Policy
-	        	</div>
-	        </div>
-	        <div class="help">
-	        	<div class="help_title">
-	        		RESOURCES
-	        	</div>
-	        	<div class="help_text">
-	        		Free eBook
-	        	</div>
-	        	<div class="help_text">
-	        		Development Tutorial
-	        	</div>
-	        	<div class="help_text">
-	        		How to - Blog
-	        	</div>
-	        	<div class="help_text">
-	        		Youtube Playlist
-	        	</div>
-	        </div>
-	    </div>
-	    <div class="line"></div>
-	    <div class="copyright">
-	    	Shop.co © 2000-2023, All Rights Reserved
-	    </div>
-	    <div class="pay">
-	    	<i class="fa-brands fa-cc-visa"></i>
-	    	<i class="fa-brands fa-cc-mastercard"></i>
-	    	<i class="fa-brands fa-cc-paypal"></i>
-	    	<i class="fa-brands fa-apple-pay"></i>
-	    	<i class="fa-brands fa-google-pay"></i>
-	    </div>
-		<!-- <div class="services_item">
-				<i class="fa-brads fa-facebook"></i>
-
-			</div>
-			<div class="services_item">
-
-			</div> -->
+        <div class="footer_1">
+	        <div class="footer">
+		        <div class="company">
+		        	<div class="company_title">
+		        		COMPANY
+		        	</div>
+		        	<div class="company_text">About</div>
+		        	<div class="company_text">Features</div>
+		        	<div class="company_text">Works</div>
+		        	<div class="company_text">Career</div>
+		        </div>
+		    </div>
+		    <div class="footer">
+		         <div class="help">
+		        	<div class="help_title">
+		        		HELP
+		        	</div>
+		        	<div class="help_text">
+		        		Customer Support
+		        	</div>
+		        	<div class="help_text">
+		        		Delivery Details
+		        	</div>
+		        	<div class="help_text">
+		        		Terms & Conditions
+		        	</div>
+		        	<div class="help_text">
+		        		Privacy Policy
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="footer">
+		        <div class="help">
+		        	<div class="help_title">
+		        		FAQ
+		        	</div>
+		        	<div class="help_text">
+		        		Account
+		        	</div>
+		        	<div class="help_text">
+		        		Manage Deliveries
+		        	</div>
+		        	<div class="help_text">
+		        		Terms & Conditions
+		        	</div>
+		        	<div class="help_text">
+		        		Privacy Policy
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="footer">
+		        <div class="help">
+		        	<div class="help_title">
+		        		RESOURCES
+		        	</div>
+		        	<div class="help_text">
+		        		Free eBook
+		        	</div>
+		        	<div class="help_text">
+		        		Development Tutorial
+		        	</div>
+		        	<div class="help_text">
+		        		How to - Blog
+		        	</div>
+		        	<div class="help_text">
+		        		Youtube Playlist
+		        	</div>
+		        </div>
+		    </div>
 		</div>
-	
-
+	    <div class="line"></div>
+	    <div class="end">
+		    <div class="copyright">
+		    	Shop.co © 2000-2023, All Rights Reserved
+		    </div>
+		    <div class="pay">
+		    	<i class="fa-brands fa-cc-visa"></i>
+		    	<i class="fa-brands fa-cc-mastercard"></i>
+		    	<i class="fa-brands fa-cc-paypal"></i>
+		    	<i class="fa-brands fa-apple-pay"></i>
+		    	<i class="fa-brands fa-google-pay"></i>
+		    </div>
+		</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src='script/script.js'></script>
 </body>
 </html>

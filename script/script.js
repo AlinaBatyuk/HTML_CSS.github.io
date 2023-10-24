@@ -19,3 +19,33 @@ menuItem.addEventListener('click', ()=> {
 	itemClose.classList.toggle('hide')
 	basketFunctions.classList.toggle('hide')
 })
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  		breakpoints: {
+            // when window width is >= 320px
+            314: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slideToClickedSlide: true,
+            },
+            // when window width is >= 480px
+            466: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+            },
+            // when window width is >= 640px
+            826: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+            }
+        }
+});
